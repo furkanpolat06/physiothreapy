@@ -1,0 +1,151 @@
+:root{
+    --red: #dc3545;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2F2F2
+}
+/* ! ------ 1 - NAVBAR ------ */
+.navbar_logo{
+height: 75px !important;
+opacity: 1;
+border: 2px solid rgba(188, 143, 143, 0.226);
+box-shadow: -3px 2px 5px rgba(0, 0, 0, 0.404);
+border-radius: 10px;
+transition: transform .5s;
+
+}
+.navbar_logo:hover{
+    transform: scale(1.11);
+  
+    border:4px solid rgba(6, 47, 230, 0.589);
+    box-shadow: 3px 3px 5px rgba(25, 12, 214, 0.842);
+    
+}
+.navbar{
+    background-color: #F2F2F2 !important;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    opacity: 0.95;
+}
+.navbar .navbar-nav{
+    text-transform:uppercase;
+    font-size: 1.15rem;
+    gap: 1.2rem;
+    font-weight: 600;
+    
+}
+.navbar .nav-link:hover{
+    color: var(--red);
+    transform: scale(1.05);
+    font-weight: 700;
+    
+}
+
+/*! ------------- 2- CAROUSEL --------------- */
+.carousel-item{
+    max-height: calc(100vh - 85px);
+}
+.carousel-item img{
+    
+    max-height: calc(100vh - 85px);
+    object-fit:cover;
+    object-position: top
+
+   }
+.carousel-caption h5{
+    color: var(--red);
+    font-size: 2.4rem;
+    text-shadow:3px 3px 3px rgba(0, 0, 0, 0.555) ;
+    
+}
+.carousel-caption h5:hover, .carousel-caption p:hover{
+    opacity: 1;
+
+}
+.carousel-caption p{
+    background-color: rgba(10, 149, 214, 0.849);
+    font-size: 1.4rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.568);
+    border-radius: 10px;
+    opacity: 0.3;
+}
+.carousel-inner button{
+    padding:1rem;
+}
+.carousel-inner button:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+    color: white !important;
+    font-weight:700;
+    
+}
+.carousel-caption{
+    bottom: 5rem;
+}
+.carousel-indicators{
+    gap: 2rem;
+}
+.carousel-indicators button{
+    background-color: rgb(221, 226, 154) !important;
+    height: 0.5rem !important;
+    width: 3rem !important;
+
+}
+.n-cards img{
+    height: 300px !important;
+    object-fit: cover;
+    
+}
+.card{
+    transition: transform .3s;
+    height: 97%;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+section#sports{
+    background-color:#F8F9FA !important;
+    color: black;
+    font-size: 1.05rem;
+    padding-left: 5rem !important;
+    
+    ;
+}
+section#sports img{
+    width: 80%;
+    opacity:0.5;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.774);
+    
+}
+#sports-buton{
+    font-size: 1.1rem !important;
+    padding: .6rem .9rem ;
+}
+.nav-pills .nav-link.active{
+    background-color: red;
+}
+.nav-pills .nav-link{
+    color: white;
+    font-size: 1.05rem;
+}
+footer i{
+    margin-right: 0.8rem;
+    transition: color 1s;
+    cursor: pointer;
+}
+footer i:hover{
+    color: var(--red);
+}
+
+footer a span{transition: color 1s;}
+footer a span:hover{
+    color: red !important;
+}
